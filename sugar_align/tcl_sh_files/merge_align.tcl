@@ -9,7 +9,6 @@
 package require psfgen
 
 #accept the arg from sugar_setup.sh
-#TODO: protein
 
 if { ([file extension [file tail [lindex $argv 1]]] == ".pdb") &&   ([info exists [lindex $argv 2]])}   {
 
@@ -28,14 +27,14 @@ if { ([file extension [file tail [lindex $argv 1]]] == ".pdb") &&   ([info exist
 
 }
 
-#sugar
+#sugar, CHANGE DIRECTORY TO MATCH
 if { ([lindex $argv 0]=="BGLC") } {
-    set sugar_psf "../4gby_glucose_autopsf.psf"
-    set sugar_pdb "../4gby_glucose_autopsf.pdb"
+    set sugar_psf " ~/tcl_bin/sugar_setup/glucose.psf"
+    set sugar_pdb " ~/tcl_bin/sugar_setup/glucose.pdb"
     set sugar_res "BGLC"
 } else {
-    set sugar_psf "../4gby_xylose_autopsf.psf"
-    set sugar_pdb "../4gby_xylose_autopsf.pdb"
+    set sugar_psf " ~/tcl_bin/sugar_setup/xylose.psf"
+    set sugar_pdb " ~/tcl_bin/sugar_setup/xylose.pdb"
     set sugar_res "BXYL"
 }
 

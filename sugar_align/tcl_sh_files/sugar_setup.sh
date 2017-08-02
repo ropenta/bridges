@@ -35,6 +35,7 @@ fi
 
 
 # if one argument is provided, assume the standard psf file
+# CHANGE DIRECTORY TO MATCH
 if [ -z "$2" ]; then
 #call VMD without a display window and build a pdb from the inputs
     /Applications/VMD\ 1.9.3.app/Contents/Resources/VMD.app/Contents/MacOS/VMD -e \
