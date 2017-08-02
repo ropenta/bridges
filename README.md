@@ -13,12 +13,10 @@ Also included are a topology file for lipids, and a sample .pdb and .psf for D-x
 1. File organization:
 
   \sugar_align
-  
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top_all27_prot_lipid.inp
       
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4gby_glucose_autopsf.pdb
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;glucose.pdb
       
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4gby_glucose_autopsf.psf
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;glucose.psf
       
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my_protein.pdb
       
@@ -30,7 +28,9 @@ Also included are a topology file for lipids, and a sample .pdb and .psf for D-x
             
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;merge_align.tcl
 
-2. $  cd ~/path_to_program/sugar_align/tcl_and_sh_files/
+2. For now, you will need to modify lines 42,43,47,48 of sugar_setup.sh and lines 31,32,35,36 of merge_align.tcl to include the correct directory of the files (.tcl, .psf, .pdb)
+
+3. $  cd ~/path_to_program/sugar_align/tcl_and_sh_files/
 
    $  bash sugar_setup.sh ../<my_protein.pdb> ../<my_protein.psf
    
