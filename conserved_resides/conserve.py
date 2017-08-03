@@ -5,6 +5,8 @@
 
 # 1. Read input
 filename = input('Enter the file name with its extension: ')
+start_res1 = input('Enter the 1st protein\'s starting residue: ')
+start_res2 = input('Enter the 2nd protein\'s starting residue: ')
 f = open(filename, 'r')
 
 
@@ -22,14 +24,14 @@ b = b.split(' ', 1)[1]
 
 # 3. Get the conserved residues for both proteins
 protein1 = []
-res_num = 49
+res_num = int(start_res1)
 for i in a.split():
     if (i == '1.0'):
         protein1.append(res_num)
     res_num = res_num + 1
     
 protein2 = []
-res_num = 5
+res_num = int(start_res2)
 for i in b.split():
     if (i == '1.0'):
         protein2.append(res_num)

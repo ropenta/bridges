@@ -17,7 +17,13 @@
 3. Click the 'File' dropdown button, and select Export. Export the Color Data as a text file.
 
 4. Run this:
+
     $ python conserve.py
+
     Enter the name of the Color Data file
 
+    Enter the 1st protein's starting residue
+
+    Enter the 2nd protien's starting residue
+    
 5. Check to make sure you have an output file called "res_conserved.txt"
