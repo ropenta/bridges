@@ -1,21 +1,21 @@
 # How to Align Glucose/Xylose near a Protein
 1. File organization:
 
-  \sugar_align
+    \sugar_align
       
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;glucose.pdb
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;glucose.pdb
       
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;glucose.psf
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;glucose.psf
       
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my_protein.pdb
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my_protein.pdb
       
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my_protein.psf
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my_protein.psf
       
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\tcl_and_sh_files
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\tcl_and_sh_files
       
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sugar_setup.sh
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sugar_setup.sh
             
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;merge_align.tcl
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;merge_align.tcl
 
 2. For now, you will need to modify lines 42,43,47,48 of sugar_setup.sh and lines 31,32,35,36 of merge_align.tcl to include the correct directory of the files (.tcl, .psf, .pdb)
 
