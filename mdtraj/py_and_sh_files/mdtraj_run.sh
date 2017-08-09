@@ -3,4 +3,4 @@
 
 #file_name=$(ls -t | head -1 | cut -f 1 -d '.')
 
-python mdtraj.py $1
+python mdtraj_run.py $1
